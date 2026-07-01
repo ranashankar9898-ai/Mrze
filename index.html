@@ -1,4 +1,3 @@
-
 DOCTYPE html>
 <html lang="hi">
 <head>
@@ -23,9 +22,30 @@ button:hover { background-color: #e94560; }
 </div>
 
 <div class="container">
+  <div class="container">
+  <h3>Movie Download</h3>
+  <button>डाउनलोड करें</button>
+  </div>
+
 <h3>OTP Bypass</h3>
 <button>सर्विस पाएँ</button>
 </div>
+  <script>
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      let instagramId = prompt("कृपया अपना Instagram User ID दर्ज करें:");
+      if (instagramId) {
+        alert("आपका ID '" + instagramId + "' दर्ज कर लिया गया है!");
+      }
+    });
+  });
+  </script>
 </body>
 </html>
+
+
+
+
 
