@@ -1,58 +1,73 @@
-DOCTYPE html>
+
+< DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mrzexx Utility App</title>
-<style>
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a2e; color: #fff; text-align: center; padding: 50px; }
-h1 { color: #e94560; }
-.container { background-color: #16213e; padding: 20px; border-radius: 10px; display: inline-block; margin-top: 20px; width: 300px; }
-button { background-color: #0f3460; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 10px; width: 100%; }
-button:hover { background-color: #e94560; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrzexx Utilities</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background-color: #16213e;
+            color: #fff;
+        }
+        h1 { color: #e94560; }
+        .container {
+            background-color: #0f3460;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #e94560;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #ff6b8b; }
+    </style>
 </head>
 <body>
-<h1>Mrzexx Utilities</h1>
-<p>आपकी पसंदीदा बॉट सेवाएँ अब वेब ऐप पर।</p>
 
-<div class="container">
-<h3>Insta Check</h3>
-<button>अभी चेक करें</button>
-</div>
+    <h1>Mrzexx Utilities</h1>
+    <p>आपकी पसंदीदा बॉट सेवाएँ अब वेब ऐप पर।</p>
 
-<div class="container">
-  <div class="container">
-  <h3>Movie Download</h3>
-  <button>डाउनलोड करें</button>
-  </div>
+    <div class="container">
+        <h3>Insta Check</h3>
+        <button id="insta-check-btn">अभी चेक करें</button>
+    </div>
 
-<h3>OTP Bypass</h3>
-<button>सर्विस पाएँ</button>
-</div>
-  // 1. Insta Check का बटन
-if (buttons[0]) { buttons[0].addEventListener('click', function(e) {e.preventDefault();
-        let instagramId = prompt("कृपया अपना Instagram User ID दर्ज करें:");
-        if (instagramId) {
-            window.location.href = "https://instagram.com/" + instagramId;
-        }
-    });
-}
-// 2. Movie Download का बटन
-if (buttons[1]) {
-    buttons[1].addEventListener('click', function(e) {
-        e.preventDefaul);
-        window.location.href = "यहाँ अपना वास्तविक मूवी डाउनलोड लिंक डालें";
-    });
-}
-// 3. OTP Bypass का बटन
-if (buttons[2]) {
-    buttons[2].addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = "यहाँ अपना वास्तविक OTP बाईपास लिंक डालें";
-    });
-}
-  </script>
+    <div class="container">
+        <h3>Movie Download</h3>
+        <button id="movie-download-btn">डाउनलोड करें</button>
+    </div>
+
+    <div class="container">
+        <h3>OTP Bypass</h3>
+        <button id="otp-bypass-btn">सर्विसेज पाएँ</button>
+    </div>
+
+    <script>
+        document.getElementById('insta-check-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            let instagramId = prompt("कृपया अपना Instagram User ID दर्ज करें:");
+            if (instagramId) {
+                window.location.href = "https://instagram.com/" + instagramId;
+            }
+        });
+
+        document.getElementById('movie-download-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = "यहाँ अपना वास्तविक मूवी डाउनलोड लिंक डालें";
+        });
+   document.getElementById('otp-bypass-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = "यहाँ अपना वास्तविक OTP बाईपास लिंक डालें";
+        });
+    </script>
 </body>
 </html>
 
