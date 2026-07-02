@@ -31,16 +31,13 @@ button:hover { background-color: #e94560; }
 <button>सर्विस पाएँ</button>
 </div>
   // 1. Insta Check का बटन
-if (buttons[0]) {
-    buttons[0].addEventListener('click', function(e) {
-       e.preventDefault();
+if (buttons[0]) { buttons[0].addEventListener('click', function(e) {e.preventDefault();
         let instagramId = prompt("कृपया अपना Instagram User ID दर्ज करें:");
         if (instagramId) {
             window.location.href = "https://instagram.com/" + instagramId;
         }
     });
 }
-
 // 2. Movie Download का बटन
 if (buttons[1]) {
     buttons[1].addEventListener('click', function(e) {
@@ -48,7 +45,6 @@ if (buttons[1]) {
         window.location.href = "यहाँ अपना वास्तविक मूवी डाउनलोड लिंक डालें";
     });
 }
-
 // 3. OTP Bypass का बटन
 if (buttons[2]) {
     buttons[2].addEventListener('click', function(e) {
