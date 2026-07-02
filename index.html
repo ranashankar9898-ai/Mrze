@@ -1,18 +1,20 @@
 
-< DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrzexx Utilities</title>
-    <style> 
+    <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
             background-color: #16213e;
             color: #fff;
         }
-        h1 { color: #e94560; }
+        h1 {
+            color: #e94560;
+        }
         .container {
             background-color: #0f3460;
             padding: 15px;
@@ -26,27 +28,31 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
-        button:hover { background-color: #ff6b8b; }
-    </style> .download-btn {
-  background-color: #ff4d4d;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-  background-color: #e60000;
-}
-    
+        button:hover {
+            background-color: #ff6b8b;
+        }
+        .download-btn {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #e60000;
+        }
+    </style>
 </head>
 <body>
-<button class="download-btn">डाउनलोड करें</button>
+    <button class="download-btn">डाउनलोड करें</button>
 
     <h1>Mrzexx Utilities</h1>
     <p>आपकी पसंदीदा बॉट सेवाएँ अब वेब ऐप पर।</p>
@@ -66,28 +72,9 @@
         <button id="otp-bypass-btn">सर्विसेज पाएँ</button>
     </div>
 
-    <script>
-        document.getElementById('insta-check-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            let instagramId = prompt("कृपया अपना Instagram User ID दर्ज करें:");
-            if (instagramId) {
-                window.location.href = "https://instagram.com/" + instagramId;
-            }
-        });
-
-        document.getElementById('movie-download-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = "यहाँ अपना वास्तविक मूवी डाउनलोड लिंक डालें";
-        });
-   document.getElementById('otp-bypass-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = "यहाँ अपना वास्तविक OTP बाईपास लिंक डालें";
-        });
-    </script>
+    <div class="container">
+        <h3>All in One</h3>
+        <button id="all-in-one-btn">अभी देखें</button>
+    </div>
 </body>
 </html>
-
-
-
-
-
