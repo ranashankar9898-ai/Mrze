@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -64,7 +63,7 @@
 
     <div class="container">
         <h3>Movie Download</h3>
-        <button id="movie-download-btn">डाउनलोड करें</button>
+        <button id="movie-download-btn">अभी देखें</button>
     </div>
 
     <div class="container">
@@ -76,5 +75,30 @@
         <h3>All in One</h3>
         <button id="all-in-one-btn">अभी देखें</button>
     </div>
+
+    <script>
+        document.getElementById('insta-check-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            let instagramId = prompt("कृपया अपना इंस्टाग्राम आईडी डालें।");
+            if (instagramId) {
+                window.location.href = "https://instagram.com/" + instagramId;
+            }
+        });
+
+        document.getElementById('movie-download-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = "https://example.com/movie";
+        });
+
+        document.getElementById('otp-bypass-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = "https://example.com/otp";
+        });
+
+        document.getElementById('all-in-one-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = "https://example.com/all-in-one";
+        });
+    </script>
 </body>
 </html>
