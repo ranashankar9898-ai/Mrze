@@ -30,12 +30,10 @@ button:hover { background-color: #e94560; }
 <h3>OTP Bypass</h3>
 <button>सर्विस पाएँ</button>
 </div>
-  const buttons = document.querySelectorAll('button');
-
-// 1. Insta Check का बटन
+  // 1. Insta Check का बटन
 if (buttons[0]) {
     buttons[0].addEventListener('click', function(e) {
-        e.preventDefault();
+       e.preventDefault();
         let instagramId = prompt("कृपया अपना Instagram User ID दर्ज करें:");
         if (instagramId) {
             window.location.href = "https://instagram.com/" + instagramId;
@@ -46,8 +44,8 @@ if (buttons[0]) {
 // 2. Movie Download का बटन
 if (buttons[1]) {
     buttons[1].addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = "https://example.com/movie-download"; // यहाँ अपना मूवी डाउनलोड का लिंक डालें
+        e.preventDefaul);
+        window.location.href = "यहाँ अपना वास्तविक मूवी डाउनलोड लिंक डालें";
     });
 }
 
@@ -55,11 +53,9 @@ if (buttons[1]) {
 if (buttons[2]) {
     buttons[2].addEventListener('click', function(e) {
         e.preventDefault();
-        window.location.href = "https://example.com/otp-bypass"; // यहाँ अपना OTP बाईपास का लिंक डालें
+        window.location.href = "यहाँ अपना वास्तविक OTP बाईपास लिंक डालें";
     });
 }
-
-  
   </script>
 </body>
 </html>
